@@ -1,4 +1,4 @@
 streamlit
 pandas
-google-
+google-genai
 google-api-core
