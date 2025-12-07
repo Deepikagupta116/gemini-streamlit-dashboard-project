@@ -1,4 +1,12 @@
 # pages/2_admin_dashboard.py
+import sys
+import os
+
+# 1. Add the root directory to the system path so Python can find 'utils.py'
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# 2. Your original imports (these will now work)
+from utils import get_data,load_css,process_pending_reviews, save_data # Import the shared functions
 import streamlit as st
 import pandas as pd
 from utils import get_data,load_css,process_pending_reviews, save_data # Import the shared functions
