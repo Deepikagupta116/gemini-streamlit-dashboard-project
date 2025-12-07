@@ -1,0 +1,12 @@
+# .streamlit/config.toml
+
+[general]
+# This line is sometimes required to ensure custom settings are read
+magicEnabled = true 
+
+[server]
+# CRITICAL FIX: Explicitly set the Python version that works locally
+# Since you were running 3.10, we'll enforce 3.10 for stability.
+# If 3.10 fails, try 3.9
+# Add this line to enforce the version:
+pythonVersion = 3.10
